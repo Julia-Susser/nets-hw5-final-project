@@ -11,6 +11,24 @@ to a free-text query, a Personalized PageRank recommender that suggests unseen p
 based on a user's review history, and a network statistics panel displaying degree
 distributions and top reviewers/products.
 
+Dataset Setup
+---------------------------
+
+The application uses the Amazon Fine Foods dataset from the Stanford SNAP repository:
+
+Source: https://snap.stanford.edu/data/web-FineFoods.html
+Direct file: finefoods.txt
+Setup Instructions
+Download the dataset from the link above.
+
+In the project root directory, manually create an input/ folder:
+
+  mkdir input
+
+Place the downloaded file inside:
+
+  input/finefoods.txt
+
 Compile (from project root)
 ---------------------------
 javac -d out src/data/*.java src/graph/*.java src/analysis/*.java \
