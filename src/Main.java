@@ -32,17 +32,17 @@ System.out.println();
         List<Review> reviews = DataLoader.loadReviews(Paths.get(dataPath), 0);
         System.out.println("  -> " + reviews.size() + " reviews loaded.");
 
-        step("Building bipartite graph…");
+        step("Building bipartite graph ...");
         Graph graph = Graph.build(reviews);
 
-        step("Computing TF-IDF vectors…");
+        step("Computing TF-IDF vectors ...");
         TFIDFEngine tfidf = new TFIDFEngine();
         tfidf.build(reviews);
 
-        step("Initialising recommender…");
+        step("Initialising recommender ...");
         Recommender recommender = new Recommender(graph, tfidf);
 
-        step("Launching app…");
+        step("Launching app ...");
         GraphViewer viewer = new GraphViewer(reviews, graph, tfidf, recommender);
         SwingUtilities.invokeLater(() -> viewer.setVisible(true));
     }
