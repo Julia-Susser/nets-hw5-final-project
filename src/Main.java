@@ -23,10 +23,10 @@ public class Main {
             if (args[i].equals("--data")) dataPath = args[i + 1];
         }
 
-        System.out.println("╔══════════════════════════════════════╗");
-        System.out.println("║        Amazon Review Explorer        ║");
-        System.out.println("╚══════════════════════════════════════╝");
-        System.out.println();
+System.out.println("+--------------------------------------+");
+System.out.println("|      Amazon Review Explorer          |");
+System.out.println("+--------------------------------------+");
+System.out.println();
 
         step("Loading all reviews from: " + dataPath);
         List<Review> reviews = DataLoader.loadReviews(Paths.get(dataPath), 0);
