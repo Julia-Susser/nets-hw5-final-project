@@ -31,7 +31,7 @@ public class GraphViewer extends JFrame {
 
     public GraphViewer(List<Review> reviews, Graph graph,
                        TFIDFEngine tfidf, Recommender recommender) {
-        super("The Reviewer Network – Amazon Fine Foods");
+        super("The Reviewer Network: Amazon Fine Foods");
         this.reviews     = reviews;
         this.graph       = graph;
         this.tfidf       = tfidf;
