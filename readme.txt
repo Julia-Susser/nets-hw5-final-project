@@ -33,7 +33,10 @@ Compile (from project root)
 ---------------------------
 javac -d out src/data/*.java src/graph/*.java src/analysis/*.java \
   src/recommendation/*.java src/app/*.java src/Main.java
- 
+
+or in one line for Windows: 
+javac -d out src/data/*.java src/graph/*.java src/analysis/*.java src/recommendation/*.java src/app/*.java src/Main.java
+
 Run
 ---
 Default (looks for input/finefoods.txt):
